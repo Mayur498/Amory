@@ -8,10 +8,10 @@ import os
 from keep_alive import keep_alive
 keep_alive()
 # insert your Telegram bot token here
-bot = telebot.TeleBot('7366095262:AAGDmphOW8ZE7VPElAqMi5j9E6prP-_hbbo')
+bot = telebot.TeleBot('7445567908:AAEB1uooQ7yNdjBQY4JxATYMQ93qVaBrGhA')
 
 # Admin user IDs
-admin_id = ["907345225"]
+admin_id = ["969452944"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -48,7 +48,7 @@ allowed_user_ids = read_users()
 
 # Function to log command to the file
 def log_command(user_id, target, port, time):
-    admin_id = ["907345225"]
+    admin_id = ["969452944"]
     user_info = bot.get_chat(user_id)
     if user_info.username:
         username = "@" + user_info.username
@@ -189,7 +189,7 @@ def remove_user(message):
             response = '''Please Specify A User ID to Remove. 
 ✅ Usage: /remove <userid>'''
     else:
-        response = "YOU DON'T HAVE ACCESS BUY KEY FROM:- @rishabgupta01 🙇."
+        response = "YOU DON'T HAVE ACCESS BUY KEY FROM:- @black_devilyt 🙇."
 
     bot.reply_to(message, response)
 
@@ -208,7 +208,7 @@ def clear_logs_command(message):
         except FileNotFoundError:
             response = "Logs are already cleared ❌."
     else:
-        response = "YOU DON'T HAVE ACCESS BUY KEY FROM:- @rishabgupta01 ❄."
+        response = "YOU DON'T HAVE ACCESS BUY KEY FROM:- @black_devilyt ❄."
     bot.reply_to(message, response)
 
 
@@ -227,7 +227,7 @@ def clear_users_command(message):
         except FileNotFoundError:
             response = "users are already cleared ❌."
     else:
-        response = "YOU DON'T HAVE ACCESS BUY KEY FROM:- @rishabgupta01 🙇."
+        response = "YOU DON'T HAVE ACCESS BUY KEY FROM:- @black_devilyt 🙇."
     bot.reply_to(message, response)
  
 
@@ -252,7 +252,7 @@ def show_all_users(message):
         except FileNotFoundError:
             response = "No data found ❌"
     else:
-        response = "YOU DON'T HAVE ACCESS BUY KEY FROM:- @rishabgupta01 ❄."
+        response = "YOU DON'T HAVE ACCESS BUY KEY FROM:- @black_devilyt ❄."
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['logs'])
@@ -285,7 +285,7 @@ def start_attack_reply(message, target, port, time):
 # Dictionary to store the last time each user ran the /bgmi command
 bgmi_cooldown = {}
 
-COOLDOWN_TIME =240
+COOLDOWN_TIME =100
 
 # Handler for /bgmi command
 @bot.message_handler(commands=['amory'])
@@ -357,8 +357,8 @@ def show_help(message):
 🤖 To See Admin Commands:
 💥 /admincmd : Shows All Admin Commands.
 
-Buy From :- @rishabgupta01
-Official Channel :- https://t.me/amory_esports
+Buy From :- @black_devilyt
+Official Channel :- https://t.me/DeViL_Store_0fficial
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -375,7 +375,7 @@ def welcome_start(message):
     user_name = message.from_user.first_name
     response = f'''❄️ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴘʀᴇᴍɪᴜᴍ ᴅᴅᴏs ʙᴏᴛ, {user_name}! ᴛʜɪs ɪs ʜɪɢʜ ǫᴜᴀʟɪᴛʏ sᴇʀᴠᴇʀ ʙᴀsᴇᴅ ᴅᴅᴏs. ᴛᴏ ɢᴇᴛ ᴀᴄᴄᴇss.
 🤖Try To Run This Command : /help 
-✅BUY :- @rishabgupta01'''
+✅BUY :- @black_devilyt'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['rules'])
